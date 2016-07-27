@@ -126,3 +126,9 @@ wfLoadSkin( 'Vector' );
 # End of automatically generated settings.
 # Add more configuration options below.
 
+
+require_once( "$IP/skins/nexus/nexus.php" );
+$wgDefaultSkin = "bootstrapnexus";
+$wgRestrictDisplayTitle = false;
+$wgAllowExternalImages = true;
+require_once "$IP/extensions/BootStrapSkinContact/BootStrapSkinContact.php";
