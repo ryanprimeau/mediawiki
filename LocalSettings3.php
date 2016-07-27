@@ -18,8 +18,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
 
-$wgSitename = "mcat-help";
-$wgMetaNamespace = "Mcat-help";
+$wgSitename = "MCAT-help";
 
 ## The URL base path to the directory containing the wiki;
 ## defaults for all runtime URL paths are based off of this.
@@ -29,7 +28,9 @@ $wgMetaNamespace = "Mcat-help";
 $wgScriptPath = "";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "http://localhost:8080";
+// $wgServer = "http://ec2-52-42-97-54.us-west-2.compute.amazonaws.com";
+$wgServer = "localhost:8080";
+
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
@@ -43,8 +44,8 @@ $wgLogo = "$wgResourceBasePath/resources/assets/wiki.png";
 $wgEnableEmail = true;
 $wgEnableUserEmail = true; # UPO
 
-$wgEmergencyContact = "apache@localhost";
-$wgPasswordSender = "apache@localhost";
+$wgEmergencyContact = "apache@ec2-52-42-97-54.us-west-2.compute.amazonaws.com";
+$wgPasswordSender = "apache@ec2-52-42-97-54.us-west-2.compute.amazonaws.com";
 
 $wgEnotifUserTalk = false; # UPO
 $wgEnotifWatchlist = false; # UPO
@@ -67,14 +68,14 @@ $wgDBTableOptions = "ENGINE=InnoDB, DEFAULT CHARSET=binary";
 $wgDBmysql5 = false;
 
 ## Shared memory settings
-$wgMainCacheType = CACHE_NONE;
+$wgMainCacheType = CACHE_ACCEL;
 $wgMemCachedServers = [];
 
 ## To enable image uploads, make sure the 'images' directory
 ## is writable, then set this to true:
 $wgEnableUploads = false;
-#$wgUseImageMagick = true;
-#$wgImageMagickConvertCommand = "/usr/bin/convert";
+$wgUseImageMagick = true;
+$wgImageMagickConvertCommand = "/usr/bin/convert";
 
 # InstantCommons allows wiki to use images from https://commons.wikimedia.org
 $wgUseInstantCommons = false;
@@ -82,7 +83,7 @@ $wgUseInstantCommons = false;
 ## If you use ImageMagick (or any other shell command) on a
 ## Linux server, this will need to be set to the name of an
 ## available UTF-8 locale
-$wgShellLocale = "en_CA.UTF-8";
+$wgShellLocale = "en_US.utf8";
 
 ## Set $wgCacheDirectory to a writable directory on the web server
 ## to make your wiki go slightly faster. The directory should not
@@ -92,14 +93,14 @@ $wgShellLocale = "en_CA.UTF-8";
 # Site language code, should be one of the list in ./languages/data/Names.php
 $wgLanguageCode = "en";
 
-$wgSecretKey = "d40e1c00c55a573b80800f8fb13adc81ce9c03df64fb61de2f5b87f23189d083";
+$wgSecretKey = "3f958cf61df4173f17f595fb21389c879497ad33d7c97562ae50f089aafa5fca";
 
 # Changing this will log out all existing sessions.
 $wgAuthenticationTokenVersion = "1";
 
 # Site upgrade key. Must be set to a string (default provided) to turn on the
 # web installer while LocalSettings.php is in place
-$wgUpgradeKey = "fbed3b699e3e0b93";
+$wgUpgradeKey = "2da60bd1041c0140";
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
@@ -127,8 +128,9 @@ wfLoadSkin( 'Vector' );
 # End of automatically generated settings.
 # Add more configuration options below.
 
-require_once( "$IP/skins/nexus/nexus.php" );
+
+// require_once( "$IP/skins/nexus/nexus.php" );
 // $wgDefaultSkin = "bootstrapnexus";
-$wgRestrictDisplayTitle = false;
-$wgAllowExternalImages = true;
-require_once "$IP/extensions/BootStrapSkinContact/BootStrapSkinContact.php";
+// $wgRestrictDisplayTitle = false;
+// $wgAllowExternalImages = true;
+// require_once "$IP/extensions/BootStrapSkinContact/BootStrapSkinContact.php";
