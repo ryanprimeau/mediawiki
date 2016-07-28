@@ -30,7 +30,7 @@ $wgScriptPath = "";
 
 ## The protocol and server name to use in fully-qualified URLs
 // $wgServer = "http://localhost:80";
-$wgServer = "http://mediawiki-env.us-west-2.elasticbeanstalk.com/";
+$wgServer = "http://mediawiki-env.us-west-2.elasticbeanstalk.com";
 
 
 
