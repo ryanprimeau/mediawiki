@@ -29,7 +29,7 @@ $wgMetaNamespace = "Mcat-help";
 $wgScriptPath = "";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "http://localhost:8080";
+$wgServer = "http://localhost:80";
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
@@ -126,9 +126,10 @@ wfLoadSkin( 'Vector' );
 
 # End of automatically generated settings.
 # Add more configuration options below.
-
-require_once( "$IP/skins/nexus/nexus.php" );
+//
+// require_once( "$IP/skins/nexus/nexus.php" );
+	$wgDefaultSkin='chameleon';
 // $wgDefaultSkin = "bootstrapnexus";
-$wgRestrictDisplayTitle = false;
-$wgAllowExternalImages = true;
-require_once "$IP/extensions/BootStrapSkinContact/BootStrapSkinContact.php";
+// $wgRestrictDisplayTitle = false;
+// $wgAllowExternalImages = true;
+// require_once "$IP/extensions/BootStrapSkinContact/BootStrapSkinContact.php";

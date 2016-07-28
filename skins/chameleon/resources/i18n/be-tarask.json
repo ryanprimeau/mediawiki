@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Red Winged Duck"
+		]
+	},
+	"chameleon-desc": "Тэма афармленьня «Хамэлеон».",
+	"chameleon-loggedin": "Вы ўвайшлі як $1.",
+	"chameleon-notloggedin": "Вы не ўвайшлі ў сыстэму",
+	"chameleon-newmessages": "Вы маеце новыя паведамленьні.",
+	"chameleon-nonewmessages": "У вас няма новых паведамленьняў."
+}
