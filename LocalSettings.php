@@ -29,7 +29,10 @@ $wgMetaNamespace = "Mcat-help";
 $wgScriptPath = "";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "http://localhost:80";
+// $wgServer = "http://localhost:80";
+$wgServer = "http://mediawiki-env.us-west-2.elasticbeanstalk.com/";
+
+
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
