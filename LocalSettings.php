@@ -29,8 +29,8 @@ $wgMetaNamespace = "Mcat-help";
 $wgScriptPath = "";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "http://localhost:80";
-// $wgServer = "http://mediawiki-env.us-west-2.elasticbeanstalk.com";
+// $wgServer = "http://localhost:80";
+$wgServer = "http://mediawiki-env.us-west-2.elasticbeanstalk.com";
 
 
 
@@ -131,7 +131,7 @@ wfLoadSkin( 'Vector' );
 # Add more configuration options below.
 //
 // require_once( "$IP/skins/nexus/nexus.php" );
-	$wgDefaultSkin='chameleon';
+	// $wgDefaultSkin='chameleon';
 // $wgDefaultSkin = "bootstrapnexus";
 // $wgRestrictDisplayTitle = false;
 // $wgAllowExternalImages = true;
